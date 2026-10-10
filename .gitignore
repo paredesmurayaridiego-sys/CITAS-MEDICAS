@@ -1,0 +1,8 @@
+build/
+dist/
+nbproject/private/
+*.class
+pacientes.txt
+doctores.txt
+usuarios.txt
+medicamentos.txt
