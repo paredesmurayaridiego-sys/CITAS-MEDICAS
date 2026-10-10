@@ -31,6 +31,16 @@ public class PruebaFuncionesMedicamentos {
         System.out.println("PRUEBA 3 APROBADA: filtro sin coincidencias");
 
         
+        List<Integer> listaVacia = Arrays.asList();
+        List<Integer> resultadoListaVacia =
+                frmMedicamentos.filtrarMedicamentos(
+                        listaVacia, numero -> numero >= 0);
+
+        if (!resultadoListaVacia.isEmpty()) {
+            throw new AssertionError("Error al filtrar una lista vacía");
+        }
+
+        System.out.println("PRUEBA 4 APROBADA: lista vacía");
         System.out.println("RESULTADO: todas las pruebas finalizaron correctamente");
     }
 }
