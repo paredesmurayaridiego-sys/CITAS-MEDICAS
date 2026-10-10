@@ -1,27 +1,37 @@
-﻿SISTEMA DE SALUD - PARCIAL INTEGRADO
+SISTEMA DE SALUD - PARCIAL INTEGRADO
 ====================================
 
-Proyecto integrado para Apache NetBeans.
+Proyecto Java Swing para Apache NetBeans.
 
-MODULOS
+MÓDULOS
 - Inicio de sesión
 - Menú principal
 - Gestión de pacientes
 - Gestión de usuarios
-- Gestión de personal médico y doctores
+- Gestión de médicos/doctores
+- Gestión de citas médicas
 - Gestión de medicamentos
 
-COMO ABRIR EN APACHE NETBEANS
+MÓDULO DE CITAS MÉDICAS
+La clase CRUDCitas permite agregar, buscar, actualizar y eliminar citas.
+Los registros se guardan en citas.txt. La clase Cita representa los datos de
+cada cita: identificador, DNI del paciente, DNI del doctor, fecha, hora y motivo.
+
+CÓMO ABRIR EN APACHE NETBEANS
 1. Descomprime el archivo ZIP.
-2. Abre Apache NetBeans.
-3. Selecciona File > Open Project.
-4. Selecciona la carpeta SistemaSalud_Parcial_Integrado.
-5. Espera a que NetBeans reconozca el proyecto.
-6. Presiona F6 (Run Project).
-7. Ingresa las credenciales configuradas para el sistema.
+2. Abre Apache NetBeans y selecciona File > Open Project.
+3. Selecciona la carpeta SistemaSalud_Parcial_Integrado.
+4. Espera a que NetBeans reconozca el proyecto.
+5. Presiona F6 (Run Project).
+6. Ingresa las credenciales configuradas en el sistema.
 
 REQUISITO
-- Java JDK 17 o superior.
+- JDK compatible con la configuración del proyecto.
 
 Clase principal: Main.
-Las credenciales no se publican en este archivo.
+No incluyas credenciales en este archivo ni publiques datos reales de pacientes.
+
+PRUEBA DEL MÓDULO DE CITAS
+Se incluye test/PruebaCRUDCitas.java con pruebas básicas de registro, duplicados,
+búsqueda, actualización y eliminación. Ejecutarla desde una carpeta de trabajo
+temporal, porque el módulo usa el archivo citas.txt relativo al directorio actual.
