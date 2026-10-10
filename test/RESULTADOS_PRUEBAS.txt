@@ -1,0 +1,34 @@
+﻿PRUEBAS AUTOMATIZADAS - SISTEMA DE SALUD
+========================================
+
+Archivo de prueba:
+test/PruebaFuncionesMedicamentos.java
+
+OBJETIVO
+Comprobar el funcionamiento de las funciones de filtrado y recorrido
+de datos del módulo de medicamentos.
+
+PRUEBA 1: FILTRADO DE DATOS
+Se verifica que al filtrar los valores 10, 20, 30 y 40 con la condición
+mayor o igual a 30, el resultado sea 30 y 40.
+Resultado: APROBADA.
+
+PRUEBA 2: RECORRIDO DE DATOS
+Se verifica que la función de recorrido procese todos los valores y
+que su suma sea 100.
+Resultado: APROBADA.
+
+PRUEBA 3: FILTRO SIN COINCIDENCIAS
+Se verifica que el filtro no devuelva elementos cuando ningún valor
+cumple la condición de ser mayor que 100.
+Resultado: APROBADA.
+
+EJECUCION
+Compilar:
+javac -encoding UTF-8 -cp "build\classes" -d "build\classes" .\test\PruebaFuncionesMedicamentos.java
+
+Ejecutar:
+java -cp "build\classes" PruebaFuncionesMedicamentos
+
+RESULTADO GENERAL
+Las tres pruebas finalizaron correctamente.
