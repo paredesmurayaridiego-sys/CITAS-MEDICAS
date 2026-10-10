@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SistemaSalud_Parcial_Integrado" default="default" basedir=".">
+    <description>Builds, tests, and runs the project SistemaSalud_Parcial_Integrado.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <target name="-post-jar">
+        <echo>Proyecto SistemaSalud_Parcial_Integrado compilado correctamente.</echo>
+    </target>
+</project>
