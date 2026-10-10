@@ -21,6 +21,16 @@ public class PruebaFuncionesMedicamentos {
 
         System.out.println("PRUEBA 1 APROBADA: filtrado de datos");
         System.out.println("PRUEBA 2 APROBADA: recorrido de datos");
+        List<Integer> resultadoVacio = frmMedicamentos.filtrarMedicamentos(
+                datos, numero -> numero > 100);
+
+        if (!resultadoVacio.isEmpty()) {
+            throw new AssertionError("Error en el filtro sin coincidencias");
+        }
+
+        System.out.println("PRUEBA 3 APROBADA: filtro sin coincidencias");
+
+        
         System.out.println("RESULTADO: todas las pruebas finalizaron correctamente");
     }
 }
