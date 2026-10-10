@@ -1,4 +1,4 @@
-import javax.swing.JOptionPane;
+﻿import javax.swing.JOptionPane;
 import util.Validaciones;
 
 public class usuario extends javax.swing.JFrame {
@@ -20,7 +20,7 @@ public class usuario extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Usario o Correo:");
+        jLabel1.setText("Usuario o correo:");
 
         jLabel2.setText("Contraseña:");
 
@@ -79,11 +79,11 @@ public class usuario extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String usuario = jTextField1.getText();
-        String contraseña =
+        String Contraseña =
                 new String(jPasswordField1.getPassword());
 
         if (usuario.equals("diego") &&
-            contraseña.equals("diego2230")) {
+            Contraseña.equals("diego2230")) {
 
             JOptionPane.showMessageDialog(
                     this,
@@ -96,7 +96,7 @@ public class usuario extends javax.swing.JFrame {
 
             JOptionPane.showMessageDialog(
                     this,
-                    "Usuario o contraseña incorrectos",
+                    "Usuario o Contraseña incorrectos",
                     "Error",
                     JOptionPane.ERROR_MESSAGE
             );
@@ -132,3 +132,4 @@ public class usuario extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
+
