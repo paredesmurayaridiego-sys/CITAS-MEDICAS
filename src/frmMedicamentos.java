@@ -453,7 +453,10 @@ if (eliminado) {
     private javax.swing.JTextField txtStock;
     private javax.swing.JTextField txtTipo;
     // End of variables declaration//GEN-END:variables
-// Primera función: filtrar medicamentos
+/**
+ * Filtra una lista de datos según una condición.
+ * Predicate permite definir qué elementos cumplen el criterio.
+ */
 public static <T> List<T> filtrarMedicamentos(
         List<T> datos,
         java.util.function.Predicate<T> condicion) {
@@ -462,7 +465,10 @@ public static <T> List<T> filtrarMedicamentos(
             .collect(java.util.stream.Collectors.toList());
 }
 
-// Segunda función: recorrer medicamentos
+/**
+ * Recorre una lista y ejecuta una acción para cada elemento.
+ * Consumer permite definir la acción que se realizará.
+ */
 public static <T> void recorrerMedicamentos(
         List<T> datos,
         java.util.function.Consumer<T> accion) {
